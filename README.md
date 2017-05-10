@@ -1,4 +1,5 @@
-# Library compatible with esp8266 to handle 28byj48 stepper motors
+# Library to handle 28byj48 stepper motors
+# compatible with esp8266
 
 This library has been designed with simplicity in mind, so it's useful for education purposes. It can't handle acceleration, for that use [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/) instead.
 
@@ -43,7 +44,7 @@ void loop ()
   stepper1.steps(stepper1.getFullRotationSteps());
   stepper2.steps(stepper2.getFullRotationSteps());
 
-  while ( ! stepper1.ready() || ! stepper2.read() )
+  while ( ! stepper1.ready() || ! stepper2.ready() )
   {
     stepper1.step();
     stepper2.step();
