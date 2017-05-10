@@ -1,6 +1,6 @@
-# Library to handle 28byj48 stepper motors. Compatible with esp8266.
+# Library to handle 28byj48 stepper motors
 
-This library has been designed with simplicity in mind, so it's useful for education purposes. It can't handle acceleration, for that use [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/) instead.
+This library is compabitle with *esp8266* and it has been designed with simplicity in mind, so it's useful for education purposes. It can't handle acceleration, for that use [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/) instead.
 
 The library supports the three sequence methods: Wake Drive, Full Step and Half Step.
 
