@@ -2,14 +2,14 @@
 
 This library has been designed with simplicity in mind, so it's useful for education purposes. It can't handle acceleration, for that use [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/) instead.
 
-The library support the three sequence methods: Wake Drive, Full Step and Half Step.
+The library supports the three sequence methods: Wake Drive, Full Step and Half Step.
 
 Examples
 --------
 
 One motor
 
-```c
+```cpp
 
 #include <SimpleStepper.h>
 
@@ -31,7 +31,7 @@ void loop ()
 
 Two motors
 
-```c
+```cpp
 
 #include <SimpleStepper.h>
 
