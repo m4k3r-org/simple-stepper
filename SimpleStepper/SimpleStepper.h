@@ -47,10 +47,6 @@ class SimpleStepper
     static const uint8_t FULLSTEP  = 1;
     static const uint8_t HALFSTEP  = 2;
 
-    // directions
-    static const uint8_t FORWARD  = 0;
-    static const uint8_t BACKWARD = 1;
-
     SimpleStepper(uint8_t sequence,
                   uint8_t pin1, uint8_t pin2,
                   uint8_t pin3, uint8_t pin4);
