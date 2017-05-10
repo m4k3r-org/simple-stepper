@@ -1,7 +1,7 @@
 /* vim: set ft=c : */
 
 /**
- * ESP8266 library to handle two 28byj-48 motor steppers.
+ * Library to handle 28byj-48 motor steppers.
  *
  * https://github.com/minirobots/simple-stepper
  *
@@ -16,6 +16,7 @@
  *     https://youtu.be/B86nqDRskVU
  *   - 28BYJ-48: Small Stepper Motor and Driver Board
  *     https://arduino-info.wikispaces.com/SmallSteppers
+ *
  *
  * Author: Leo Vidarte <http://nerdlabs.com.ar>
  *
@@ -56,6 +57,8 @@ class SimpleStepper
 
     void steps(int steps);
     void step();
+
+    bool ready();
 
     int getFullRotationSteps();
 

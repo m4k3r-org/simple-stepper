@@ -1,7 +1,7 @@
 /* vim: set ft=c : */
 
 /**
- * ESP8266 library to handle two 28byj-48 motor steppers.
+ * Library to handle 28byj-48 motor steppers.
  *
  * https://github.com/minirobots/simple-stepper
  *
@@ -17,6 +17,7 @@
  *   - 28BYJ-48: Small Stepper Motor and Driver Board
  *     https://arduino-info.wikispaces.com/SmallSteppers
  *
+ *
  * Author: Leo Vidarte <http://nerdlabs.com.ar>
  *
  * This is free software:
@@ -24,7 +25,6 @@
  * under the terms of the GPL version 3
  * as published by the Free Software Foundation.
  */
-
 
 #include <SimpleStepper.h>
 
@@ -48,8 +48,8 @@ SimpleStepper::SimpleStepper (uint8_t sequence,
 
 void SimpleStepper::steps (int steps)
 {
-  _steps = abs(steps);
   _clockwise = steps > 0;
+  _steps = abs(steps);
 }
 
 void SimpleStepper::step ()
@@ -67,12 +67,17 @@ void SimpleStepper::step ()
   }
 }
 
+bool SimpleStepper::ready()
+{
+  return _steps == 0;
+}
+
 int SimpleStepper::getFullRotationSteps ()
 {
   switch (_sequence)
   {
     case SimpleStepper::WAKEDRIVE:
-    case SimpleStepper::FULLSTEP:
+    case SimpleStepper::FULLSTEP :
       return STEPS_PER_OUTPUT_REVOLUTION_FS;
 
     case SimpleStepper::HALFSTEP:
