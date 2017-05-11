@@ -4,6 +4,8 @@ This library is compabitle with *esp8266* and it has been designed with simplici
 
 The library supports the three sequence methods: Wake Drive, Full Step and Half Step.
 
+Here is a great video about the 28BYJ-48 and how it works: https://youtu.be/B86nqDRskVU
+
 Examples
 --------
 
