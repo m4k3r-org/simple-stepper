@@ -93,6 +93,6 @@ void SimpleStepper::_writeMotor (int step)
 {
   for (uint8_t i = 0; i < 4; i++)
   {
-    digitalWrite(_pins[i], bitRead(_motorSequences[_sequence][step], i));
+    digitalWrite(_pins[i], bitRead(_motorSequences[_sequence][step], 3-i));
   }
 }
