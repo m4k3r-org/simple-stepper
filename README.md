@@ -6,6 +6,13 @@ The library supports the three sequence methods: Wake Drive, Full Step and Half 
 
 Here is a great video about the 28BYJ-48 and how it works: https://youtu.be/B86nqDRskVU
 
+Connection
+----------
+
+You can connect one stepper to an ULN2003, or two to an ULN2803:
+
+![uln2803 with two 28byj-48](https://raw.githubusercontent.com/minirobots/simple-stepper/master/uln2803.png)
+
 Examples
 --------
 
